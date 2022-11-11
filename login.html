@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+             * {box-sizing: border-box;}
+        
+        body { 
+         background-color: antiquewhite;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header {
+          overflow: hidden;
+          background-color: 	#927ef5;
+          padding: 20px 10px;
+        }
+        
+        .header a {
+          float: left;
+          color: rgb(202, 223, 13);
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+          font-size: 18px; 
+          line-height: 35px;
+          border-radius: 10px;
+        }
+        
+        .header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+       
+        * {
+          box-sizing: border-box;
+        }
+        
+        
+        .container {
+          padding: 16px;
+          background-color: antiquewhite;
+        }
+        
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color:antiquewhite;
+          outline: none;
+        }
+        
+ 
+        hr {
+          border: 1px solid black;
+          margin-bottom: 25px;
+        }
+        
+        
+        .registerbtn {
+          background-color:#aa3e04;
+          color: white;
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        .registerbtn:hover {
+          opacity: 1;
+        }
+        
+       
+        a {
+          color: dodgerblue;
+        }
+        
+        
+        .signin {
+          background-color: #f1f1f1;
+          text-align: center;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="header">
+                <a href="#default" class="logo">BaKe ND CaKe</a>
+              </div>
+           
+        
+        <form >
+          <div class="container">
+            <h1>Register</h1>
+            <p><marquee>Please fill in this form to create an account.</marquee></p>
+            <hr>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+             <label for="Gender"><b>Gender</b></label>   
+            <input type="radio" name="m">Male 
+            <input type="radio" name="m">Female
+            <hr>
+            <button type="submit" class="registerbtn">Register</button>
+          </div>
+          
+          <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+          </div>
+        </form>
+        
+        </body>
+        </html>
+        
